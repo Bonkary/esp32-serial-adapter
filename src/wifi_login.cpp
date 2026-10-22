@@ -1,5 +1,7 @@
 #include "wifi_login.h"
 
+WiFiServer server(LISTEN_PORT);
+
 bool connectToWiFi() {
     showWorking(); // Blue
     int timeout = 10;
